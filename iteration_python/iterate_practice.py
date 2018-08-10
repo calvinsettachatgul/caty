@@ -3,10 +3,6 @@
 # for num in my_arr:
 #     print(num)
     
-    
-
-    
-
 book1 = {
     "title": "mobydick",
     "author": "Herman Melville"
@@ -30,8 +26,5 @@ book4 = {
 books = [book1, book2, book3, book4]
 
 for book in books:
-    # print(book["title"])
-    # print(book["author"])
-    
     print("*********************************************")
     print("book title: {} \nbook author: {}\n".format(book["title"], book["author"]))

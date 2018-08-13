@@ -1,10 +1,10 @@
 from flask import Flask, render_template
+from user_data import user_data
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    
     # return a render_template instead of a hard coded string
     data_from_database = {"user1": "user1firstname"}
     return render_template('index.html', data=data_from_database)
@@ -22,8 +22,14 @@ def helloworld(name): # new view function about
     return_message = "Hello World {}".format(name)
     return return_message 
 
-@app.route('/welcome/<username>')
 
+@app.route('/user/<id>')
+def user_show(id):
+    user = user_data[id]
+    print(user)
+    return render_template("user_show.html", user=user)
+
+@app.route('/welcome/<username>')
 def welcome(username):
     print(username)
     return "Welcome Dear {}".format(username)

@@ -25,6 +25,7 @@ def helloworld(name): # new view function about
 
 @app.route('/user/<id>')
 def user_show(id):
+    # work to make a database call to get the user
     user = user_data[id]
     print(user)
     return render_template("user_show.html", user=user)

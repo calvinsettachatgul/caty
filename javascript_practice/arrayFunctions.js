@@ -35,11 +35,15 @@ console.log("this is totalSum ",totalSum)
 
 // map
 
-let multiptlyByTwo = (element) => { return element*2 };
+// let multiptlyByTwo = (element) => { return element*2 };
 
-let doubledArr = myArr.map(multiptlyByTwo);
-console.log(doubledArr);
+// let doubledArr = myArr.map(multiptlyByTwo);
+// console.log(doubledArr);
 
+
+let fiftyCoin = (element) => { return element * 50 };
+let coinMap = coin.map(fiftyCoin);
+console.log(coinMap);
 
 // filter
 // let isEven = (number) => { return (number % 2 == 0) };
@@ -51,7 +55,9 @@ console.log(doubledArr);
 // console.log(evenElements)
 // console.log(oddElements)
 
-
+let isGreaterThanADollar = (number) => { return (number > 1) };
+let filterMap = coinMap.filter(isGreaterThanADollar);
+console.log(filterMap)
 
 // for(i = 0; i < myArr.length; i++) {
 //     console.log("hello element " + myArr[i]);

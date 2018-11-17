@@ -2,6 +2,9 @@
 
 # for num in my_arr:
 #     print(num)
+
+from collections import defaultdict
+
     
 book1 = {
     "title": "mobydick",
@@ -37,7 +40,7 @@ books = [book1, book2, book3, book4]
 #                   3 : 2} 
 
 # keep a dictionary of the frequency
-my_list = [1,1,2,2,3,3]
+my_list = [1,1,2,2,3,3,3,4]
 
 # iterate over the array
     # for num in my_list:
@@ -50,7 +53,7 @@ my_list = [1,1,2,2,3,3]
         
 # return the dictionary 
 
-frequency = {}
+frequency = defaultdict(int)
 '''
 1 1 {1:1}
 2 1 {1:2}
@@ -63,5 +66,8 @@ frequency = {}
 
 for num in my_list:
     print(num)
-    if(frequency[num] == 0):
-        print("there is nothing in frequency")
+    # increment the value of frequency at the number ie increment freqency[num]
+    #frequency[num] += 1
+    
+    
+#print(frequency)

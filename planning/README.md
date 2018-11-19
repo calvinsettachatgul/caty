@@ -7,3 +7,7 @@ Calvin
 * React
 * Javascript Fundamentals
 * TDD Algorithms
+
+Tyler
+
+* Javascript Fundamentals

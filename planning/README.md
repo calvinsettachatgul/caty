@@ -7,6 +7,7 @@ Calvin
 * React
 * Javascript Fundamentals
 * TDD Algorithms
+* Python
 
 Tyler
 

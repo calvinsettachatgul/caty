@@ -12,3 +12,7 @@ Calvin
 Tyler
 
 * Javascript Fundamentals
+
+## Algorithms
+* valid parenthesis
+https://leetcode.com/problems/valid-parentheses/
